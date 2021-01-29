@@ -21,3 +21,9 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - images/bottom_bar_home.png
+    - images/bottom_bar_home_selected.png
+    - images/bottom_bar_mine.png
+    - images/bottom_bar_mine_selected.png
