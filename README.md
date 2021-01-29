@@ -1,16 +1,7 @@
-# flutter_widget_demo
+# Flutter Widget Demo
 
-A widget demo application.
+该项目为Futter Widget演示项目，通过借鉴[**Flutter 老孟**](http://laomengit.com/)网站项目，进行功能集成、优化，主要用于未来Flutter开发时借鉴作用。
 
-## Getting Started
+### 起航.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+新项目，新起点。
