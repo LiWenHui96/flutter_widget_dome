@@ -15,4 +15,8 @@ class CommonUtils {
         timeInSecForIosWeb: isLong ? 2 : 1
     );
   }
+
+  static void hideToast() {
+    Fluttertoast.cancel();
+  }
 }

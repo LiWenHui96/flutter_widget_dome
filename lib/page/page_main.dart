@@ -4,7 +4,7 @@ import 'package:flutter_widget_demo/base_state.dart';
 import 'package:flutter_widget_demo/page/home/page_home.dart';
 import 'package:flutter_widget_demo/page/mine/page_mine.dart';
 import 'package:flutter_widget_demo/provider/provider.dart';
-import 'package:flutter_widget_demo/ui/ui.dart';
+import 'package:flutter_widget_demo/util/util.dart';
 import 'package:provider/provider.dart';
 
 /// @Author: LWH
@@ -123,8 +123,8 @@ class _MainPageState extends BaseState<MainPage> {
       mExitTime = DateTime.now().millisecondsSinceEpoch;
       showToast('再按一次退出程序');
     } else {
-      // CommonUtils.hideToast(context);
       // ChannelUtils().exitApp();
+      CommonUtils.hideToast();
     }
   }
 }
