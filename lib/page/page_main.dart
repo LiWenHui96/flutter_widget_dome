@@ -123,8 +123,8 @@ class _MainPageState extends BaseState<MainPage> {
       mExitTime = DateTime.now().millisecondsSinceEpoch;
       showToast('再按一次退出程序');
     } else {
-      // ChannelUtils().exitApp();
       CommonUtils.hideToast();
+      ChannelUtils().exitApp();
     }
   }
 }
