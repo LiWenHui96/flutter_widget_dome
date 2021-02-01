@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_widget_demo/base_state.dart';
 import 'package:flutter_widget_demo/page/home/page_home.dart';
 import 'package:flutter_widget_demo/page/mine/page_mine.dart';
@@ -25,6 +26,15 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
+          localizationsDelegates: [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+          ],
+          supportedLocales: [
+            const Locale('zh', 'CH'),
+            const Locale('en', 'US'),
+          ],
+          locale: Locale('zh'),
           home: MainPage(),
         ));
   }
