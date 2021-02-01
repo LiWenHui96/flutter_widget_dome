@@ -8,6 +8,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 class CommonUtils {
   /// Toast
   static void showToast(String msg, {bool isLong = false}) {
+    hideToast();
     Fluttertoast.showToast(
         msg: msg,
         toastLength: isLong ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT,
