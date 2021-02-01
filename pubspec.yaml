@@ -23,6 +23,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/json/widget_list.json
     - images/bottom_bar_home.png
     - images/bottom_bar_home_selected.png
     - images/bottom_bar_mine.png
