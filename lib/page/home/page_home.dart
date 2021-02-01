@@ -34,6 +34,7 @@ class _HomePageState extends BaseState<HomePage> {
                 return HomeListWidget(
                   widgetInfoModel: _provider.widgetInfoList[index],
                   onTap: (model) async {
+                    await _openPage(model.type);
                   },
                 );
               },
@@ -42,5 +43,18 @@ class _HomePageState extends BaseState<HomePage> {
         },
       ),
     );
+  }
+
+  _openPage(type) async {
+    switch (type) {
+      case "AboutDialog":
+        await _navigatorToAboutDialogWidgetPage();
+        return;
+    }
+  }
+
+  /// AboutDialogWidgetPage
+  _navigatorToAboutDialogWidgetPage() async {
+    await RouterUtil.pushWidget(context, AboutDialogWidgetPage());
   }
 }
