@@ -5,3 +5,4 @@
 
 export "channel_util.dart";
 export "common_util.dart";
+export "route_util.dart";
