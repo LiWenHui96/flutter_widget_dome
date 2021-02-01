@@ -4,3 +4,4 @@
 /// @Describe: 
 
 export "colors_ui.dart";
+export "screen_adapt_utils.dart";
