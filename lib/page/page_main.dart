@@ -71,6 +71,11 @@ class _MainPageState extends BaseState<MainPage> {
       child: Consumer<MainTabProvider>(
         builder: (context, provider, _) {
           return Scaffold(
+            appBar: AppBar(
+              title: Text(
+                "Flutter Widget"
+              ),
+            ),
             body: IndexedStack(
               index: provider.currentIndex,
               children: _tabPageList,
