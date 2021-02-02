@@ -53,6 +53,9 @@ class _HomePageState extends BaseState<HomePage> {
       case "AboutListTile":
         await _navigatorToAboutListTileWidgetPage(type);
         return;
+      case "AbsorbPointer":
+        await _navigatorToAbsorbPointerWidgetPage(type);
+        return;
     }
   }
 
@@ -64,5 +67,10 @@ class _HomePageState extends BaseState<HomePage> {
   /// AboutListTileWidgetPage
   _navigatorToAboutListTileWidgetPage(String title) async {
     await RouterUtil.pushWidget(context, AboutListTileWidgetPage(title: title,));
+  }
+
+  /// AbsorbPointerWidgetPage
+  _navigatorToAbsorbPointerWidgetPage(String title) async {
+    await RouterUtil.pushWidget(context, AbsorbPointerWidgetPage(title: title,));
   }
 }

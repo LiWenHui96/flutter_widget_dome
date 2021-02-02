@@ -6,5 +6,9 @@
   {
     "type": "AboutListTile",
     "title": "AboutListTile"
+  },
+  {
+    "type": "AbsorbPointer",
+    "title": "AbsorbPointer"
   }
 ]
