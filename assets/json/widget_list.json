@@ -2,5 +2,9 @@
   {
     "type": "AboutDialog",
     "title": "AboutDialog"
+  },
+  {
+    "type": "AboutListTile",
+    "title": "AboutListTile"
   }
 ]

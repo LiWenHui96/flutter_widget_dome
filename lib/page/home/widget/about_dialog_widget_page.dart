@@ -9,16 +9,27 @@ import 'package:package_info/package_info.dart';
 /// @Describe: AboutDialog 演示Demo
 
 class AboutDialogWidgetPage extends StatefulWidget {
+  final String title;
+
+  const AboutDialogWidgetPage({
+    Key key,
+    this.title,
+  }) : super(key: key);
+
   @override
-  _AboutDialogWidgetPageState createState() => _AboutDialogWidgetPageState();
+  _AboutDialogWidgetPageState createState() => _AboutDialogWidgetPageState(this.title);
 }
 
 class _AboutDialogWidgetPageState extends BaseState<AboutDialogWidgetPage> {
+  final String title;
+
+  _AboutDialogWidgetPageState(this.title);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AboutDialog"),
+        title: Text(this.title,),
       ),
       body: Container(
         width: double.infinity,
@@ -45,10 +56,10 @@ class _AboutDialogWidgetPageState extends BaseState<AboutDialogWidgetPage> {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     showAboutDialog(
       context: context,
-      applicationIcon: Icon(Icons.account_box,),
+      applicationIcon: FlutterLogo(),
       applicationName: packageInfo.appName,
       applicationVersion: packageInfo.version,
-        applicationLegalese: "copyright LWH",
+      applicationLegalese: "copyright LWH",
       children: <Widget>[
         Container(
           height: 30,

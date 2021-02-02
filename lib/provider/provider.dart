@@ -3,5 +3,6 @@
 /// @Date: 2021/01/29 3:06 PM
 /// @Describe: 
 
+export "provider_about_list_tile.dart";
 export "provider_home.dart";
 export "provider_main_tab.dart";

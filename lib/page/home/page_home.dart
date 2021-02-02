@@ -48,13 +48,21 @@ class _HomePageState extends BaseState<HomePage> {
   _openPage(type) async {
     switch (type) {
       case "AboutDialog":
-        await _navigatorToAboutDialogWidgetPage();
+        await _navigatorToAboutDialogWidgetPage(type);
+        return;
+      case "AboutListTile":
+        await _navigatorToAboutListTileWidgetPage(type);
         return;
     }
   }
 
   /// AboutDialogWidgetPage
-  _navigatorToAboutDialogWidgetPage() async {
-    await RouterUtil.pushWidget(context, AboutDialogWidgetPage());
+  _navigatorToAboutDialogWidgetPage(String title) async {
+    await RouterUtil.pushWidget(context, AboutDialogWidgetPage(title: title,));
+  }
+
+  /// AboutListTileWidgetPage
+  _navigatorToAboutListTileWidgetPage(String title) async {
+    await RouterUtil.pushWidget(context, AboutListTileWidgetPage(title: title,));
   }
 }
