@@ -7,6 +7,7 @@ import 'package:package_info/package_info.dart';
 /// @Host: liwenhui
 /// @Date: 2021/02/01 9:44 AM
 /// @Describe: AboutDialog 演示Demo
+///            http://laomengit.com/flutter/widgets/AboutDialog.html
 
 class AboutDialogWidgetPage extends StatefulWidget {
   final String title;

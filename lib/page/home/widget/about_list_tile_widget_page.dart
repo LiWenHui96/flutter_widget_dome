@@ -6,7 +6,8 @@ import 'package:provider/provider.dart';
 /// @Author: LWH
 /// @Host: liwenhui
 /// @Date: 2021/02/01 11:01 AM
-/// @Describe:
+/// @Describe: 此控件通常不会使用，通常会设置一个单独的“关于页面”
+///            http://laomengit.com/flutter/widgets/AboutListTile.html
 
 class AboutListTileWidgetPage extends StatefulWidget {
   final String title;
@@ -17,14 +18,14 @@ class AboutListTileWidgetPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _AboutListTileWidgetPage createState() =>
-      _AboutListTileWidgetPage(this.title);
+  _AboutListTileWidgetPageState createState() =>
+      _AboutListTileWidgetPageState(this.title);
 }
 
-class _AboutListTileWidgetPage extends BaseState<AboutListTileWidgetPage> {
+class _AboutListTileWidgetPageState extends BaseState<AboutListTileWidgetPage> {
   final String title;
 
-  _AboutListTileWidgetPage(this.title);
+  _AboutListTileWidgetPageState(this.title);
 
   @override
   void initState() {
