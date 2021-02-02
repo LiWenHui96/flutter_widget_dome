@@ -83,9 +83,7 @@ class _MainPageState extends BaseState<MainPage> {
         builder: (context, provider, _) {
           return Scaffold(
             appBar: AppBar(
-              title: Text(
-                "Flutter Widget"
-              ),
+              title: Text("Flutter Widget"),
             ),
             body: IndexedStack(
               index: provider.currentIndex,

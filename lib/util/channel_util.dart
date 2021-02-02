@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 /// @Author: LWH
 /// @Host: liwenhui
 /// @Date: 2021/01/29 4:02 PM
-/// @Describe: 
+/// @Describe:
 
 class ChannelUtils {
   static const String _channelName = 'com.lwh.widget.demo/method';

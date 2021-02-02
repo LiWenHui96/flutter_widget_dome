@@ -4,7 +4,7 @@ import 'package:flutter_widget_demo/base_state.dart';
 /// @Author: LWH
 /// @Host: liwenhui
 /// @Date: 2021/01/29 3:17 PM
-/// @Describe: 
+/// @Describe:
 
 class MinePage extends StatefulWidget {
   @override

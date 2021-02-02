@@ -15,17 +15,18 @@ class HomeListWidget extends StatelessWidget {
     Key key,
     @required this.widgetInfoModel,
     this.onTap,
-  }) :super(key: key);
-
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap == null ? null : () {
-        if (onTap != null) {
-          onTap(widgetInfoModel);
-        }
-      },
+      onTap: onTap == null
+          ? null
+          : () {
+              if (onTap != null) {
+                onTap(widgetInfoModel);
+              }
+            },
       child: Container(
         height: size(80),
         decoration: BoxDecoration(
@@ -37,7 +38,10 @@ class HomeListWidget extends StatelessWidget {
             ),
           ),
         ),
-        padding: EdgeInsets.only(left: size(20), right: size(20),),
+        padding: EdgeInsets.only(
+          left: size(20),
+          right: size(20),
+        ),
         child: Row(
           children: [
             Text(
@@ -47,4 +51,5 @@ class HomeListWidget extends StatelessWidget {
         ),
       ),
     );
-  }}
+  }
+}

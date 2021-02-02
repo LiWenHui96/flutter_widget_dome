@@ -38,7 +38,7 @@ class _AboutListTileWidgetPageState extends BaseState<AboutListTileWidgetPage> {
 
     return ChangeNotifierProvider(
       create: (_) => AboutListTileProvider(),
-      child: Consumer<AboutListTileProvider> (
+      child: Consumer<AboutListTileProvider>(
         builder: (context, provider, _) {
           return Scaffold(
             appBar: AppBar(

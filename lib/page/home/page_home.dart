@@ -61,16 +61,31 @@ class _HomePageState extends BaseState<HomePage> {
 
   /// AboutDialogWidgetPage
   _navigatorToAboutDialogWidgetPage(String title) async {
-    await RouterUtil.pushWidget(context, AboutDialogWidgetPage(title: title,));
+    await RouterUtil.pushWidget(
+      context,
+      AboutDialogWidgetPage(
+        title: title,
+      ),
+    );
   }
 
   /// AboutListTileWidgetPage
   _navigatorToAboutListTileWidgetPage(String title) async {
-    await RouterUtil.pushWidget(context, AboutListTileWidgetPage(title: title,));
+    await RouterUtil.pushWidget(
+      context,
+      AboutListTileWidgetPage(
+        title: title,
+      ),
+    );
   }
 
   /// AbsorbPointerWidgetPage
   _navigatorToAbsorbPointerWidgetPage(String title) async {
-    await RouterUtil.pushWidget(context, AbsorbPointerWidgetPage(title: title,));
+    await RouterUtil.pushWidget(
+      context,
+      AbsorbPointerWidgetPage(
+        title: title,
+      ),
+    );
   }
 }

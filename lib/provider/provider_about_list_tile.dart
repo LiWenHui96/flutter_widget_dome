@@ -4,7 +4,7 @@ import 'package:package_info/package_info.dart';
 /// @Author: LWH
 /// @Host: liwenhui
 /// @Date: 2021/02/01 11:46 AM
-/// @Describe: 
+/// @Describe:
 
 class AboutListTileProvider extends BaseProvider {
   PackageInfo _packageInfo;

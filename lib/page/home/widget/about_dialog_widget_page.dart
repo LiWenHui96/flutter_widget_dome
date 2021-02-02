@@ -18,7 +18,8 @@ class AboutDialogWidgetPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _AboutDialogWidgetPageState createState() => _AboutDialogWidgetPageState(this.title);
+  _AboutDialogWidgetPageState createState() =>
+      _AboutDialogWidgetPageState(this.title);
 }
 
 class _AboutDialogWidgetPageState extends BaseState<AboutDialogWidgetPage> {
@@ -30,7 +31,9 @@ class _AboutDialogWidgetPageState extends BaseState<AboutDialogWidgetPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(this.title,),
+        title: Text(
+          this.title,
+        ),
       ),
       body: Container(
         width: double.infinity,

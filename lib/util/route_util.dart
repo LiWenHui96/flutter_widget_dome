@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 /// @Author: LWH
 /// @Host: liwenhui
 /// @Date: 2021/02/01 9:49 AM
-/// @Describe: 
+/// @Describe:
 
 class RouterUtil {
   static Future<T> pushWidget<T>(
-      BuildContext context,
-      Widget widget, {
-        bool replaceRoot = false,
-        bool replaceCurrent = false,
-      }) {
+    BuildContext context,
+    Widget widget, {
+    bool replaceRoot = false,
+    bool replaceCurrent = false,
+  }) {
     return pushRoute(
       context,
       CupertinoPageRoute(builder: (ctx) => widget),
@@ -22,11 +22,11 @@ class RouterUtil {
   }
 
   static Future<T> pushRoute<T>(
-      BuildContext context,
-      PageRoute<T> route, {
-        bool replaceRoot = false,
-        bool replaceCurrent = false,
-      }) {
+    BuildContext context,
+    PageRoute<T> route, {
+    bool replaceRoot = false,
+    bool replaceCurrent = false,
+  }) {
     assert(!(replaceRoot == true && replaceCurrent == true));
     if (replaceRoot == true) {
       return Navigator.pushAndRemoveUntil(

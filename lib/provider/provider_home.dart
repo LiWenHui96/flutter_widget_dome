@@ -19,7 +19,8 @@ class HomeProvider extends BaseProvider {
   List<WidgetInfoModel> get widgetInfoList => _widgetInfoList;
 
   Future<void> setWidgetInfoList() async {
-    var jsonString = await rootBundle.loadString("assets/json/widget_list.json");
+    var jsonString =
+        await rootBundle.loadString("assets/json/widget_list.json");
 
     var jsonData = json.decode(jsonString);
 
