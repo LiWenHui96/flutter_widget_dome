@@ -56,36 +56,37 @@ class _HomePageState extends BaseState<HomePage> {
       case "AbsorbPointer":
         await _navigatorToAbsorbPointerWidgetPage(type);
         return;
+      case "AllChip":
+        await _navigatorToAllChipWidgetPage(type);
+        return;
     }
   }
 
   /// AboutDialogWidgetPage
   _navigatorToAboutDialogWidgetPage(String title) async {
     await RouterUtil.pushWidget(
-      context,
-      AboutDialogWidgetPage(
-        title: title,
-      ),
+      context, AboutDialogWidgetPage(title: title,),
     );
   }
 
   /// AboutListTileWidgetPage
   _navigatorToAboutListTileWidgetPage(String title) async {
     await RouterUtil.pushWidget(
-      context,
-      AboutListTileWidgetPage(
-        title: title,
-      ),
+      context, AboutListTileWidgetPage(title: title,),
     );
   }
 
   /// AbsorbPointerWidgetPage
   _navigatorToAbsorbPointerWidgetPage(String title) async {
     await RouterUtil.pushWidget(
-      context,
-      AbsorbPointerWidgetPage(
-        title: title,
-      ),
+      context, AbsorbPointerWidgetPage(title: title,),
+    );
+  }
+
+  /// AllChipWidgetPage
+  _navigatorToAllChipWidgetPage(String title) async {
+    await RouterUtil.pushWidget(
+      context, AllChipWidgetPage(title: title,),
     );
   }
 }

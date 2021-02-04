@@ -10,5 +10,9 @@
   {
     "type": "AbsorbPointer",
     "title": "AbsorbPointer"
+  },
+  {
+    "type": "AllChip",
+    "title": "AllChip"
   }
 ]
