@@ -49,16 +49,16 @@ class _HomePageState extends BaseState<HomePage> {
     switch (type) {
       case "AboutDialog":
         await _navigatorToAboutDialogWidgetPage(type);
-        return;
+        break;
       case "AboutListTile":
         await _navigatorToAboutListTileWidgetPage(type);
-        return;
+        break;
       case "AbsorbPointer":
         await _navigatorToAbsorbPointerWidgetPage(type);
-        return;
+        break;
       case "AllChip":
         await _navigatorToAllChipWidgetPage(type);
-        return;
+        break;
     }
   }
 
